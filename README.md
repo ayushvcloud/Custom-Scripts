@@ -1,6 +1,6 @@
 # Custom-Scripts
 
-Task 1:
+**Task 1:**
 Automate the EC2 instance creation under load balancer.
 1. Create a VPC with should have a public and private subnet 2. Create a role with s3 access.
 3. Launch an ec2 instance with the role created in step 1, inside the private subnet of VPC, and install apache through bootstrapping. ( You need to have your NAT gateway attached to your private subnet )
@@ -8,7 +8,7 @@ Automate the EC2 instance creation under load balancer.
 5. Add the ec2 instance, under the load balancer.
 
 
-Task 3:
+**Task 3:**
 1. Create an auto scaling group with minimum size of 1 and maximum size of 3 with load balancer
 created in step 3 of Task 1 .
 2. Add the created instance under the auto scaling group. ( You need to have an AMI created out of previously created instance in Task 1 which has apache installed in it)
@@ -42,7 +42,7 @@ Access http://<ELB_URL> to access apache installed with heading "Deployed via Te
 
 
 
-Task 2: 
+**Task 2:** 
 Automate the process of stop (For cost saving)
 Automate the process of stop to a group of EC2 instances (based on tags). Ensure that there is no user
 logged into the servers, and CPU usage is idle ( less than 10% ) for the particular period of time before stopping. The idle period and tag will be passed as arguments.
@@ -58,7 +58,7 @@ Tag required both key and value, idle period requires value and format(hr,mind,s
 
 
 
-Task 4:
+**Task 4:**
 Automate the process of granting / revoking SSH access to a group of servers instances to a new developer.
 Please provide your solution by uploading your code in any of the code repository.
 
