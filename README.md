@@ -1,6 +1,6 @@
 # Custom-Scripts
 
-**Task 1:**
+**Task 1:** <br />
 Automate the EC2 instance creation under load balancer.
 1. Create a VPC with should have a public and private subnet 2. Create a role with s3 access.
 3. Launch an ec2 instance with the role created in step 1, inside the private subnet of VPC, and install apache through bootstrapping. ( You need to have your NAT gateway attached to your private subnet )
