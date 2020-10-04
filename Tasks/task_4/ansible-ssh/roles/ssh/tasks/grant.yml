@@ -1,0 +1,11 @@
+--- #tasks to add a new user and grant ssh access to the user
+- name: Add new user
+  user:
+    name: "{{ username }}"
+  
+
+- name: Grant user SSH access
+  authorized_key:
+    user: "{{ username }}"
+    state: present
+    key: "{{ lookup('file', '../../../keys/{{ username }}/id_rsa.pub') }}"

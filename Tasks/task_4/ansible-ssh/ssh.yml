@@ -1,0 +1,8 @@
+--- #ssh main yaml
+  - hosts: servers
+    gather_facts: False
+    remote_user: ubuntu
+    become: true
+    become_user: root
+    roles:
+      - ssh

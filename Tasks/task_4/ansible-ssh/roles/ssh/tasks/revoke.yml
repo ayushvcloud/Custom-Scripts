@@ -1,0 +1,12 @@
+--- #tasks to remove the user and revoke ssh access from the user
+- name: Revoke user's SSH access
+  authorized_key:
+    user: "{{ username }}"
+    state: absent
+    key: "{{ lookup('file', '../../../keys/{{ username }}/id_rsa.pub') }}"
+
+- name: Remove the user
+  user:
+    name: "{{ username }}"
+    state: absent
+    remove: yes
